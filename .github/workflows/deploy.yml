@@ -38,5 +38,5 @@ jobs:
           script: |
             cd ./spendbot
             docker rm -f spendbot || true
-            docker pull balasuriya1808/spendbot:latest
+            docker pull balasuriya1808/spendbot
             docker run -d --name spendbot --restart always spendbot -v /home/balasuriya1808/spendbot:/app
